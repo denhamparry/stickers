@@ -9,7 +9,7 @@ verification. Sizes and finishes below are targets pending owner confirmation.
 
 | Preview | Sticker | Size | Finish | Licence | Buy |
 | --- | --- | --- | --- | --- | --- |
-| ![I See BMCs artwork](stickers/i-see-bmcs/print.png) | I See BMCs | 75 × 75 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Buy (pending verification)](https://www.redbubble.com/shop/ap/185333538) |
+| ![I See BMCs artwork](stickers/i-see-bmcs/source.png) | I See BMCs | 75 × 75 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Buy (pending verification)](https://www.redbubble.com/shop/ap/185333538) |
 | ![I Debug on Slack artwork](stickers/debug-on-slack/print.png) | I Debug on Slack | 75 × 75 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Buy (pending verification)](https://www.redbubble.com/shop/ap/185334972) |
 | ![Yes Queen artwork](stickers/yes-queen/print.png) | Yes Queen | 69 × 75 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Buy (pending verification)](https://www.redbubble.com/shop/ap/185334877) |
 | ![I Now Wat I'm Doin artwork](stickers/i-now-wat-im-doin/print.png) | I Now Wat I'm Doin | 75 × 25 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Buy (pending verification)](https://www.redbubble.com/shop/ap/185334475) |
@@ -19,13 +19,14 @@ verification. Sizes and finishes below are targets pending owner confirmation.
 
 Put each sticker in `stickers/<slug>/`, using a short lowercase slug with hyphens. Keep these files together:
 
-For new artwork, use the [Redbubble sticker image brief](docs/redbubble-sticker-image-requirements.md)
-to prepare and review the print image.
-
 - `source.<ext>`: editable original artwork, preferably vector format.
 - `print.<ext>`: print-ready PNG or PDF export at the dimensions accepted by the printer.
 - `preview.<ext>`: small image for the README gallery, if the print export is unsuitable as a preview. The preview field may point to the print export.
 - `metadata.yaml`: the sticker's name, physical size, finish, licence, and product URL.
+
+For new artwork, use the [Redbubble sticker image brief](docs/redbubble-sticker-image-requirements.md)
+to prepare and review the print image. If the source image is already ready for
+printing and the gallery, `print` and `preview` may point to the source file.
 
 `metadata.yaml` uses this schema:
 
