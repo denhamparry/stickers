@@ -1,0 +1,8 @@
+name: I See BMCs
+size_mm: [75, 75]
+finish: glossy
+license: CC BY 4.0
+source: source.png
+print: print.png
+preview: print.png
+purchase_url: null

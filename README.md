@@ -1,153 +1,45 @@
-# Claude Code Project Template
+# Stickers
 
-A GitHub template repository that provides a standardized, fully-configured foundation for new projects developed with Claude Code. Includes built-in support for Test-Driven Development (TDD), automated code quality checks, and AI-assisted workflows.
+Source artwork, print exports, and purchase links for stickers by Lewis Denham-Parry.
 
-## 🚀 Quick Start
+## Gallery
 
-### 1. Create Your Project
+The first sticker's artwork is ready. Its Redbubble product listing is pending.
 
-Click the **"Use this template"** button above to create a new repository from this template.
+| Preview | Sticker | Size | Finish | Licence | Buy |
+| --- | --- | --- | --- | --- | --- |
+| ![I See BMCs artwork](stickers/i-see-bmcs/print.png) | I See BMCs | 75 × 75 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Listing pending |
 
-### 2. Clone and Setup
+## Adding a sticker
 
-```bash
-# Clone your new repository
-git clone https://github.com/your-username/your-new-project.git
-cd your-new-project
+Put each sticker in `stickers/<slug>/`, using a short lowercase slug with hyphens. Keep these files together:
 
-# Open Claude Code
-claude
+- `source.<ext>`: editable original artwork, preferably vector format.
+- `print.<ext>`: print-ready PNG or PDF export at the dimensions accepted by the printer.
+- `preview.<ext>`: small image for the README gallery, if the print export is unsuitable as a preview. The preview field may point to the print export.
+- `metadata.yaml`: the sticker's name, physical size, finish, licence, and product URL.
+
+`metadata.yaml` uses this schema:
+
+```yaml
+name: Example sticker
+size_mm: [75, 75]
+finish: matte
+license: CC BY 4.0
+source: source.svg
+print: print.png
+preview: preview.png
+purchase_url: https://example.com/product-page
 ```
 
-### 3. Run the Setup Wizard
+All fields are required. `size_mm` is the target `[width, height]` in millimetres. The file fields are paths relative to that sticker's directory. Set `purchase_url: null` until a product listing is published; then use its URL for the exact design. The gallery must say “Listing pending” until the buy URL resolves. A product's final size and finish must match its published listing.
 
-In Claude Code, run:
+The initial storefront choice is [Redbubble](https://www.redbubble.com/en/about/selling). Product listings and prices are managed in the owner's Redbubble artist account. The gallery links directly to each published sticker product, rather than to the general shop.
 
-```text
-/setup-repo
-```
+## Licensing
 
-The interactive wizard will:
+Artwork in `stickers/` is © Lewis Denham-Parry and licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/), unless a sticker's metadata explicitly says otherwise. Attribute the creator as “Lewis Denham-Parry” and link to this repository and the licence when reusing an artwork file. The repository's `LICENSE` covers its software and configuration, not the sticker artwork.
 
-- ✅ Gather your project information (name, tech stack, commands)
-- ✅ Customize configuration files for your specific project
-- ✅ Configure pre-commit hooks for your language
-- ✅ Set up automated GitHub PR reviews
-- ✅ Install and verify all configurations
+## Contributing
 
-### 4. Start Building
-
-```bash
-# Commit the configured files
-git add .
-git commit -m "chore: configure Claude Code for project"
-
-# Start developing with TDD!
-```
-
-## 📦 What's Included
-
-### Core Configuration
-
-- **`CLAUDE.md`** - Project context for Claude Code with TDD guidelines
-  (`AGENTS.md` symlink included for Codex CLI portability)
-- **`docs/setup.md`** - Comprehensive setup checklist, best practices, and
-  branch protection guide
-- **`.pre-commit-config.yaml`** - Code quality hooks (formatting, linting, security)
-- **`SECURITY.md`** - Vulnerability disclosure policy
-- **`.github/CODEOWNERS`** - Default reviewers for every PR
-- **`flake.nix` / `.envrc`** - Opt-in reproducible dev shell (nix + direnv)
-
-### CI Workflows (SHA-pinned actions)
-
-- **`pre-commit.yml`** - Runs all quality hooks; the required status check
-- **`ci.yml`** - Placeholder for your build/test/lint jobs
-- **`auto-assign-prs.yml`** - Auto-assigns and requests review on new PRs
-- **`pre-commit-autoupdate.yml`** - Weekly hook version update PRs
-- **`links.yml`** - Markdown link checking (internal on PRs, external weekly)
-- **`scorecard.yml`** - OpenSSF Scorecard security posture (public repos)
-
-### Custom Slash Commands
-
-Located in `.claude/commands/`:
-
-- **`/setup-repo`** - Interactive setup wizard (run this first!)
-- **`/review`** - Comprehensive code review (quality, tests, security, performance)
-- **`/tdd-check`** - Verify TDD workflow compliance
-- **`/precommit`** - Run pre-commit hooks on all files
-
-## 🎯 Key Features
-
-### Test-Driven Development (TDD)
-
-This template enforces TDD workflow:
-
-1. **Red** - Write a failing test first
-2. **Green** - Write minimal code to make it pass
-3. **Refactor** - Improve code while keeping tests green
-
-Use `/tdd-check` to verify you're following TDD principles.
-
-### Automated Code Quality
-
-- Pre-commit hooks for consistent formatting and linting, enforced in CI
-- Secret detection to prevent credential leaks
-- Language-specific quality checks (Python, Go, JavaScript/TypeScript)
-- Guidance for adding on-demand PR reviews with Claude Code (`@claude`
-  mentions)
-
-### Claude Code Optimized
-
-- Project-specific context in CLAUDE.md
-- Custom slash commands for common workflows
-- Optional `@claude` mention-based PR reviews after GitHub App setup
-- Best practices built into the template
-
-## 🛠️ Supported Languages
-
-The template is language-agnostic but includes pre-configured hooks for:
-
-- **Python** - Black, Flake8, isort
-- **Go** - gofmt, go vet, go imports
-- **JavaScript/TypeScript** - Prettier, ESLint
-- **Generic** - File formatting, YAML/JSON validation, secret detection
-
-Simply uncomment the relevant hooks in `.pre-commit-config.yaml` during setup.
-
-## 📚 Documentation
-
-- **`CLAUDE.md`** - Main project context for Claude Code
-- **`docs/setup.md`** - Detailed setup instructions and best practices
-- **`.claude/commands/`** - Custom command documentation
-
-## 🔧 Manual Setup (Alternative)
-
-If you prefer not to use the interactive wizard, follow the manual checklist in `docs/setup.md`.
-
-## 🤝 Contributing to the Template
-
-To improve this template:
-
-1. Make your changes
-2. Test with a new project
-3. Update documentation
-4. Submit a PR
-
-## 📝 License
-
-[Add your license here]
-
-## 🙋 Support
-
-For issues with:
-
-- **This template**: Open an issue in this repository
-- **Claude Code**: Visit <https://docs.claude.com/en/docs/claude-code>
-- **Feedback**: <https://github.com/anthropics/claude-code/issues>
-
----
-
-**Template Version:** 1.1
-**Last Updated:** 2026-07-02
-
-Built with ❤️ for Claude Code development
+Open a pull request with the source artwork, print export, metadata, and gallery row. Confirm that the artwork is yours to license and that the product link is live. The required `pre-commit` check validates repository formatting before a PR can merge.
