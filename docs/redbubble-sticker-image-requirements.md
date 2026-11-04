@@ -10,7 +10,7 @@ creating one original sticker image at a time for the
 - Direction: bold, playful digital illustrations inspired by technology,
   everyday absurdities, and community. Give each design a clear silhouette and
   a joke or idea that reads quickly. The first artwork,
-  [I See BMCs](../stickers/i-see-bmcs/print.png), is a reference, not a template
+  [I See BMCs](../stickers/i-see-bmcs/source.png), is a reference, not a template
   that every new design must copy.
 - Rights: use original artwork that the creator can publish under the recorded
   artwork licence, currently CC BY 4.0. Do not include third-party characters,
@@ -46,19 +46,19 @@ creating one original sticker image at a time for the
 These image and preview points follow Redbubble's
 [sticker design guide](https://blog.redbubble.com/2024/10/tips-on-designing-for-stickers-2/)
 and [transparent-background guide](https://blog.redbubble.com/2017/03/how-to-create-transparent-backgrounds/).
-The current [I See BMCs print PNG](../stickers/i-see-bmcs/print.png) is 1254 ×
+The current [I See BMCs print image](../stickers/i-see-bmcs/source.png) is 1254 ×
 1254 pixels and predates this preferred full-size target. Do not present its
 draft 75 mm glossy target as a verified Redbubble listing specification.
 
 ## Repository handoff
 
-Keep an editable `source.<ext>`, the transparent `print.png`, and
-`metadata.yaml` in `stickers/<slug>/` as described in the
-[README](../README.md#adding-a-sticker). A gallery preview may reuse the print
-PNG. Set `purchase_url: null` until the exact sticker product page is public and
-verified, unless the owner explicitly approves a provisional product URL and it
-is labelled as pending verification in the gallery. The general shop URL is not
-a product buy link.
+Keep `source.<ext>` and `metadata.yaml` in `stickers/<slug>/` as described in
+the [README](../README.md#adding-a-sticker). Add a separate transparent print
+export when the source is not already print-ready. A gallery preview may reuse
+the print image. Set `purchase_url: null` until the exact sticker product page
+is public and verified, unless the owner explicitly approves a provisional
+product URL and it is labelled as pending verification in the gallery. The
+general shop URL is not a product buy link.
 
 ## Copy-ready generation prompt
 

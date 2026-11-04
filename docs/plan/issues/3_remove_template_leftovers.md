@@ -19,7 +19,8 @@ brief below the file list and clarify that one file may serve multiple roles.
 
 ## Expected files
 
-- `CODE_OF_CONDUCT.md`, `flake.nix`, `README.md`
+- `CODE_OF_CONDUCT.md`, `flake.nix`, `README.md`,
+  `docs/redbubble-sticker-image-requirements.md`
 - `stickers/i-see-bmcs/metadata.yaml`; remove its redundant `print.png`
 - Remove the six `docs/plan/issues/` files whose issue links target
   `denhamparry/template`; keep the stickers issue #2 plan.
@@ -33,6 +34,7 @@ brief below the file list and clarify that one file may serve multiple roles.
 | No plan links to `denhamparry/template` | Implement in this PR | Pre-merge, Codex; inspect all remaining plan issue links and `rg`. |
 | No duplicate I See BMCs files; metadata paths exist | Implement in this PR | Pre-merge, Codex; file hashes and path checks. Preserve source bytes. |
 | File list immediately follows its introduction | Implement in this PR | Pre-merge, Codex; inspect rendered README source. |
+| Image brief references removed print PNG | Implement in this PR | Pre-merge, Codex; all local Markdown links resolve. Found by post-PR review and Links CI. |
 | `pre-commit run --all-files` passes | Validate in this PR | Pre-merge, Codex; full hook run after all intended files are staged. |
 | Suggested distinct print export or reuse source | Reuse source in this PR | The duplicate has no separate export value; metadata `print` and `preview` may name `source.png`. |
 | Linked stickers #1 and maintenance #173 | Context only | No separate action requested here. |
