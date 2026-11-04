@@ -1,0 +1,8 @@
+# Environment variables
+.env
+
+# Nix / direnv
+.direnv/
+result
+# Keep flake.lock committed for reproducible dev shells and stable nix-direnv
+# caching. Template consumers can refresh pins with `nix flake update`.
