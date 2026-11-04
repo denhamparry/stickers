@@ -63,7 +63,10 @@ verified; the general shop URL is not a product buy link.
 > Create one original sticker illustration for Lewis Denham-Parry's DenhamParry
 > Redbubble shop. Lewis is a Cardiff-based technologist and speaker. The shop's
 > direction is bold, playful digital art inspired by the funny side of
-> technology and everyday life. The specific idea is **[describe the subject,
+> technology and everyday life. This is one of five initial original designs;
+> use only elements Lewis can publish under CC BY 4.0. The first sticker,
+> I See BMCs, sets an expressive tech-humour tone without prescribing the
+> subject of this new design. The specific idea is **[describe the subject,
 > action, and joke]**. Use **[palette and mood]** with a strong silhouette,
 > expressive details, and high contrast that remains clear at small sticker
 > size. Include exactly **[text, or "no text"]**; if text is used, make it
