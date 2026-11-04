@@ -1,5 +1,5 @@
 {
-  description = "Claude Code project template — reproducible dev environment";
+  description = "Stickers artwork and metadata development environment";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
