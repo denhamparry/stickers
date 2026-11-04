@@ -1,5 +1,8 @@
 # Template placeholder URLs — intentionally non-resolvable until customised.
 # One regex per line; read automatically by lychee (links.yml workflow).
+# Issue #2: temporarily exclude only the five owner-approved provisional product URLs.
+# Remove this pattern after their public listings are verified.
+^https://www\.redbubble\.com/shop/ap/(185333538|185334972|185334877|185334475|185334310)$
 https://github\.com/YOUR_USERNAME/.*
 https://github\.com/your-username/.*
 https://github\.com/\[OWNER\]/.*
