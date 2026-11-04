@@ -14,6 +14,9 @@ The first sticker's artwork is ready. Its Redbubble product listing is pending.
 
 Put each sticker in `stickers/<slug>/`, using a short lowercase slug with hyphens. Keep these files together:
 
+For new artwork, use the [Redbubble sticker image brief](docs/redbubble-sticker-image-requirements.md)
+to prepare and review the print image.
+
 - `source.<ext>`: editable original artwork, preferably vector format.
 - `print.<ext>`: print-ready PNG or PDF export at the dimensions accepted by the printer.
 - `preview.<ext>`: small image for the README gallery, if the print export is unsuitable as a preview. The preview field may point to the print export.
