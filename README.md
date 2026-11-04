@@ -34,7 +34,7 @@ purchase_url: https://example.com/product-page
 
 All fields are required. `size_mm` is the target `[width, height]` in millimetres. The file fields are paths relative to that sticker's directory. Set `purchase_url: null` until a product listing is published; then use its URL for the exact design. The gallery must say “Listing pending” until the buy URL resolves. A product's final size and finish must match its published listing.
 
-The initial storefront choice is [Redbubble](https://www.redbubble.com/en/about/selling). Product listings and prices are managed in the owner's Redbubble artist account. The gallery links directly to each published sticker product, rather than to the general shop.
+The planned storefront is [DenhamParry on Redbubble](https://www.redbubble.com/people/DenhamParry/shop). The shop is still being set up. Product listings and prices are managed in the owner's Redbubble artist account. The gallery links directly to each published sticker product, rather than to the general shop.
 
 ## Licensing
 
