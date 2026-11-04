@@ -4,11 +4,16 @@ Source artwork, print exports, and purchase links for stickers by Lewis Denham-P
 
 ## Gallery
 
-The first sticker's artwork is ready. Its Redbubble product listing is pending.
+These five owner-supplied product URLs are placeholders pending public listing
+verification. Sizes and finishes below are targets pending owner confirmation.
 
 | Preview | Sticker | Size | Finish | Licence | Buy |
 | --- | --- | --- | --- | --- | --- |
-| ![I See BMCs artwork](stickers/i-see-bmcs/print.png) | I See BMCs | 75 × 75 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Listing pending |
+| ![I See BMCs artwork](stickers/i-see-bmcs/print.png) | I See BMCs | 75 × 75 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Buy (pending verification)](https://www.redbubble.com/shop/ap/185333538) |
+| ![I Debug on Slack artwork](stickers/debug-on-slack/print.png) | I Debug on Slack | 75 × 75 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Buy (pending verification)](https://www.redbubble.com/shop/ap/185334972) |
+| ![Yes Queen artwork](stickers/yes-queen/print.png) | Yes Queen | 69 × 75 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Buy (pending verification)](https://www.redbubble.com/shop/ap/185334877) |
+| ![I Now Wat I'm Doin artwork](stickers/i-now-wat-im-doin/print.png) | I Now Wat I'm Doin | 75 × 25 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Buy (pending verification)](https://www.redbubble.com/shop/ap/185334475) |
+| ![Guess Who's the Mid Dad? artwork](stickers/guess-whos-the-mid-dad/print.png) | Guess Who's the Mid Dad? | 75 × 75 mm target | Glossy target | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Buy (pending verification)](https://www.redbubble.com/shop/ap/185334310) |
 
 ## Adding a sticker
 
@@ -35,9 +40,9 @@ preview: preview.png
 purchase_url: https://example.com/product-page
 ```
 
-All fields are required. `size_mm` is the target `[width, height]` in millimetres. The file fields are paths relative to that sticker's directory. Set `purchase_url: null` until a product listing is published; then use its URL for the exact design. The gallery must say “Listing pending” until the buy URL resolves. A product's final size and finish must match its published listing.
+All fields are required. `size_mm` is the target `[width, height]` in millimetres. The file fields are paths relative to that sticker's directory. Set `purchase_url: null` until a product listing is published; then use its URL for the exact design. The five initial product URLs were provided by the owner and are provisional pending public verification; their gallery links are marked accordingly. A product's final size and finish must match its published listing.
 
-The planned storefront is [DenhamParry on Redbubble](https://www.redbubble.com/people/DenhamParry/shop). The shop is still being set up. Product listings and prices are managed in the owner's Redbubble artist account. The gallery links directly to each published sticker product, rather than to the general shop.
+The planned storefront is [DenhamParry on Redbubble](https://www.redbubble.com/people/DenhamParry/shop). The owner reports five listings, but their public availability still needs verification. Product listings and prices are managed in the owner's Redbubble artist account. The gallery links to the owner-provided product URLs rather than to the general shop.
 
 ## Licensing
 

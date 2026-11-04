@@ -56,7 +56,9 @@ Keep an editable `source.<ext>`, the transparent `print.png`, and
 `metadata.yaml` in `stickers/<slug>/` as described in the
 [README](../README.md#adding-a-sticker). A gallery preview may reuse the print
 PNG. Set `purchase_url: null` until the exact sticker product page is public and
-verified; the general shop URL is not a product buy link.
+verified, unless the owner explicitly approves a provisional product URL and it
+is labelled as pending verification in the gallery. The general shop URL is not
+a product buy link.
 
 ## Copy-ready generation prompt
 
