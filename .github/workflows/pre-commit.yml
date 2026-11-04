@@ -1,6 +1,6 @@
 # Pre-commit CI — runs all hooks from .pre-commit-config.yaml on every PR.
 # This is the intended REQUIRED status check for branch protection
-# (see docs/setup.md → Branch Protection).
+# (see the repository README and fleet standards).
 name: Pre-commit
 
 on:
